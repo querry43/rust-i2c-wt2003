@@ -1,0 +1,23 @@
+[package]
+name = "qwiic-mp3-trigger"
+version = "0.1.1"
+description = "i2c interface to the SparkFun Sqiic MP3 Trigger (https://www.sparkfun.com/products/14714)"
+license = "MIT"
+readme = "README.md"
+authors = ["Matt Harrington <querry43@gmail.com>"]
+repository = "https://github.com/querry43/rust-qwiic-mp3-trigger"
+homepage = "https://github.com/querry43/rust-qwiic-mp3-trigger"
+documentation = "https://github.com/querry43/rust-qwiic-mp3-trigger/blob/master/README.md"
+build = "build.rs"
+
+[badges]
+travis-ci = { repository = "querry43/rust-qwiic-mp3-trigger"}
+
+[dependencies]
+i2cdev = "~0.3.1"
+
+[build-dependencies]
+skeptic = "0.13"
+
+[dev-dependencies]
+skeptic = "0.13"
