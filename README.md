@@ -2,7 +2,7 @@
 
 [![Build status](https://img.shields.io/travis/querry43/rust-qwiic-mp3-trigger.svg)](https://travis-ci.org/querry43/rust-qwiic-mp3-trigger)
 [![License](https://img.shields.io/github/license/querry43/rust-qwiic-mp3-trigger.svg)](LICENSE)
-[![crates.io](https://img.shields.io/crates/v/qwiic-mpt-trigger.svg)](https://crates.io/crates/qwiic-mp3-trigger)
+[![crates.io](https://img.shields.io/crates/v/qwiic-mp3-trigger.svg)](https://crates.io/crates/qwiic-mp3-trigger)
 [![Documentation](https://docs.rs/qwiic-mp3-trigger/badge.svg)](https://docs.rs/qwiic-mp3-trigger)
 
 A rust crate for the Sparkfun Qwiic MP3 Trigger (https://www.sparkfun.com/products/14714).
@@ -50,3 +50,7 @@ The raspberry pi is a good deal faster than the attiny85 in this module.  Commun
 ```
 dtparam=i2c_baudrate=50000
 ```
+
+## Debugging
+
+This crate uses the log crate for `debug!` and `trace!` logging.  Enable it by initializing a logger such as [simple_logger](https://github.com/borntyping/rust-simple_logger).

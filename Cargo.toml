@@ -1,6 +1,6 @@
 [package]
 name = "qwiic-mp3-trigger"
-version = "0.1.1"
+version = "0.1.2"
 description = "i2c interface to the SparkFun Sqiic MP3 Trigger (https://www.sparkfun.com/products/14714)"
 license = "MIT"
 readme = "README.md"
@@ -15,6 +15,7 @@ travis-ci = { repository = "querry43/rust-qwiic-mp3-trigger"}
 
 [dependencies]
 i2cdev = "~0.3.1"
+log = "0.4.2"
 
 [build-dependencies]
 skeptic = "0.13"
